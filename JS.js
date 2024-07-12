@@ -45,21 +45,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
         generateVariants(username, currentEmail + username[index] + '.', index + 1, emails, domain);
     }
-
-
-    var frame = document.getElementById("simple-cookie-consent");
-    if (frame) {
-        var denyButton = frame.querySelector(".cookie-consent-deny");
-        var allowButton = frame.querySelector(".cookie-consent-allow");
-
-        denyButton.addEventListener("click", function() {
-            frame.remove();
-        });
-
-        allowButton.addEventListener("click", function() {
-            frame.remove();
-        });
-    } else {
-        console.error("Frame element not found.");
-    }
-});
